@@ -1,0 +1,68 @@
+1.What is Java
+ Ans: -Java is a programming language.
+	  -Java was developed by James gosling.
+	  -Java is owned by oracle company.
+	  -Java is object oriented language. 
+	  -Java is platform independent because once we write program and compile we can run in any operating system.
+	  -Java uses 2 commands for compilling and running i,e., javac FileName.java for compilation and 
+	      java ClassName
+		
+
+
+2.Explain the architecture of Java with flow diagram
+Ans: -Architecture of java consists JDK,JRE and JVM these are 3 major components of Java.
+		JDK
+		-It stands for java Development kit.
+		-It provides kit to develop java applications.
+		-there are many different versions in taht jdk 1.8 is stable version.
+		
+		JRE
+		-It stands for Java run time environment.
+		-It consists of libraries and JVM.
+
+		JVM
+		-JVM stands for Java virtual machine.
+		-It is not present in reality.
+		-JVM search for main method signature to start excution of java program.
+		
+		
+
+
+
+3.Define class
+Ans: -Class is an keyword used to declare object with flower braces.
+     - Class consists of variables and methods.
+	 -syntax of class is
+			class ClassName{
+			
+			}
+	 -While declaring class class name first letter should be in Uppercase rest in small.  		
+
+
+4.Define data types and explain types and flow of data
+Ans:-Data type in java is used to store diffent types of data.
+	-There are 2 datatype Primitive and Non-Primitive datatypes.
+	-In primitive data type int,byte,short,double,char,boolean,long,double are present.
+	-In non0primitive datatype String, Arrays etc are present.
+
+5.Define variable and expain with the syntax 
+Ans: -Variable is a container that store value with reference name.
+	  Syntax of variable
+	  datatype referenceName=value;
+	  EX:   String nameOfPerson="Prashant";
+	  
+	  
+	
+6.Write a program declare 2 types of datatype and give example for switch case
+
+7.Write a program declare 2 types of datatype and give example for if else (AND and OR)and for loop
+
+8.Explain platform independent and WORA
+Ans: Java Is platform independent because
+	-Java is written in normal human reable english language it converts in to .class by compilling javac.
+	-Once after compilation it is converted into .class file which can be used to excute or run in any operating system.
+	Hence it is called platform independent.
+	-Once .class file generated we can run any where. i.e., write once and run anywhere.(WORA)
+
+
+ 
