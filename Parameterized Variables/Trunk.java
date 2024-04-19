@@ -1,15 +1,15 @@
 class Trunk{
-	public static void thickNessOfTrunk(int thickNess){
-		System.out.println("Thick Ness Of Trunk : "+thickNess);
+	public static void sizeOfTrunk(byte x){
+		System.out.println("Size of Trunk: "+x);
 	}
 	
-	public static void nOfTrunks(byte nOfT){
-		System.out.println("Number of Trunks in short : "+nOfT);
+	public static void valueOfTrunk(short value){
+		System.out.println("Number of Trunks in int : "+value);
 	}
 	
-	public static void noOfTrunks(short noOfT){
-		System.out.println("Number of Trunks in int : "+noOfT);
-	}
+	public static void numberOfTrunks(int trunks){
+		System.out.println("Number Of Trunks : "+trunks);
+	} 
 	
 	public static void mrpOfTrunk(float mrp){
 		System.out.println("MRP Of Trunk : "+mrp);
@@ -19,7 +19,7 @@ class Trunk{
 		System.out.println("Contact for Trunk : "+contact);
 	}
 
-	public static void valueOfTrunk(double value){
+	public static void valuesOfTrunk(double value){
 		System.out.println("value of Trunk : "+value);
 	}
 	
@@ -34,10 +34,4 @@ class Trunk{
 	public static void nameOfTrunks(String nameOfT){
 		System.out.println("Name of Trunks in String : "+nameOfT);
 	}
-	
-	
-
-	
-	
-	
 }
