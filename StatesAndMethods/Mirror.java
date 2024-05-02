@@ -6,6 +6,7 @@ class Mirror{
 	String nameOfMirror;
 	long contactNum;
 	boolean isMirrorPresent;
+
 	
 	public void addMirrors(int noOfMiror){
 		noOfMirrors=noOfMiror;
