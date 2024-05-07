@@ -13,6 +13,7 @@ class Coil{
 	public void availability(boolean brandIsPresent){
 		System.out.println("Is the is present ? : "+this.brandIsSame);
 		brandIsSame=brandIsPresent;
+		this.nameOfBrand("Boult");
 		System.out.println("Is the is present ? : "+this.brandIsSame);
 	}
 }
