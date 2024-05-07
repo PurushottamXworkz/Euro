@@ -13,6 +13,7 @@ class Tower{
 	public void checkWorking(boolean working){
 		System.out.println("The tower is in work ? : "+this.isTowerInWork);
 		isTowerInWork=working;
+		this.checkHeight(753);
 		System.out.println("The tower is in work ? : "+this.isTowerInWork);
 	}
 }
