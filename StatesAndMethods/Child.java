@@ -13,6 +13,7 @@ class Child{
 	public void active(boolean chlidActive){
 		System.out.println("The child is active ? : "+this.isChildNoughty);
 		isChildNoughty=chlidActive;
+		this.name("Gundu");
 		System.out.println("The child is active ? : "+this.isChildNoughty);
 	}
 	
