@@ -1,17 +1,17 @@
 class Occurance{
 	public static void main(String args[]){
-		int arrayName[]={2,1,5,3,7,7,7,7,7,7};
-		for(int i=0;i<arrayName.length;i++){
-			int count=0;
-			for(int j=0;j<arrayName.length;j++){
-				if(arrayName[i]==arrayName[j]){
-					count+=1;
-					//System.out.println(arrayName[i]);
-					System.out.println("Occurance is :"+count);
-				}
+		int count=0;
+		int arrayName[]={12,12,23,4,5,6,2,1,43,29,2};
+		int start=0;
+		int end=arrayName.length-1;
+		while(start<=end){
+			if(arrayName[start]==arrayName[end]){
+				count++;
+				System.out.println("Occurance number is :"+count);
 			}
-			
-		}	
+			start++;
+			end--;
+		}
 	}
 }
 		
