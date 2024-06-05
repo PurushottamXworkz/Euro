@@ -1,21 +1,21 @@
 package com.xworkz.vishnu.things;
 
 public class Vishnu {
-	public static int noOfHands;
-	public static int noOfEyes;
-	public static int noOfAvtars;
-	public static int noOfFriends;
-	public static int noOfGaurds;
-	public static String nameOfDevotee;
-	public static String nameOfFather;
-	public static String nameOfMother;
-	public static String yuga;
-	public static String favFood;
-	public static String instrument;
-	public static String nameOfAvtar;
-	public static String nameOfWife;
-	public static String location;
-	public static String nameOfUncle;
+	public int noOfHands;
+	public int noOfEyes;
+	public int noOfAvtars;
+	public int noOfFriends;
+	public int noOfGaurds;
+	public String nameOfDevotee;
+	public String nameOfFather;
+	public String nameOfMother;
+	public String yuga;
+	public String favFood;
+	public String instrument;
+	public String nameOfAvtar;
+	public String nameOfWife;
+	public String location;
+	public String nameOfUncle;
 
 	public Vishnu() {
 		System.out.println("This is no arguement constructor");
@@ -59,9 +59,8 @@ public class Vishnu {
 		System.out.println("Uncle name of Krishna is :" + this.nameOfUncle);
 	}
 
-	public static void setHands(int hands) {
-		noOfHands = hands;
-
+	public void setHands(int hands) {
+		this.noOfHands = hands;
 	}
 
 	public int getHands() {
@@ -69,112 +68,112 @@ public class Vishnu {
 		return noOfHands;
 	}
 
-	public static void setEyes(int eyes) {
-		noOfEyes = eyes;
+	public void setEyes(int eyes) {
+		this.noOfEyes = eyes;
 	}
 
 	public int getEyes() {
 		return noOfEyes;
 	}
 
-	public static void setNoAvatars(int avatar) {
-		noOfAvtars = avatar;
+	public void setNoAvatars(int avatar) {
+		this.noOfAvtars = avatar;
 	}
 
 	public int getNoOfAvatars() {
 		return noOfAvtars;
 	}
 
-	public static void setYuga(String yug) {
-		yuga = yug;
+	public void setYuga(String yug) {
+		this.yuga = yug;
 	}
 
 	public String getYuga() {
 		return yuga;
 	}
 
-	public static void setNoOfGaurds(int gaurds) {
-		noOfGaurds = gaurds;
+	public void setNoOfGaurds(int gaurds) {
+		this.noOfGaurds = gaurds;
 	}
 
 	public int getNoOfgaurds() {
 		return noOfGaurds;
 	}
 
-	public static void setNameOfDevotee(String Devotee) {
-		nameOfDevotee = Devotee;
+	public void setNameOfDevotee(String Devotee) {
+		this.nameOfDevotee = Devotee;
 	}
 
 	public String getNameOfDevotee() {
 		return nameOfDevotee;
 	}
 
-	public static void setNameOfFather(String father) {
-		nameOfFather = father;
+	public void setNameOfFather(String father) {
+		this.nameOfFather = father;
 	}
 
 	public String getNameOfFather() {
 		return nameOfFather;
 	}
 
-	public static void setNameOfMother(String mother) {
-		nameOfMother = mother;
+	public void setNameOfMother(String mother) {
+		this.nameOfMother = mother;
 	}
 
 	public String getNameOfMother() {
 		return nameOfMother;
 	}
 
-	public static void setNoOfFriends(int friends) {
-		noOfFriends = friends;
+	public void setNoOfFriends(int friends) {
+		this.noOfFriends = friends;
 	}
 
 	public int getNoOfFriends() {
 		return noOfFriends;
 	}
 
-	public static void setFavFood(String food) {
-		favFood = food;
+	public void setFavFood(String food) {
+		this.favFood = food;
 	}
 
 	public String getFavFood() {
 		return favFood;
 	}
 
-	public static void setInstrument(String gadget) {
-		instrument = gadget;
+	public void setInstrument(String gadget) {
+		this.instrument = gadget;
 	}
 
 	public String getInstrument() {
 		return instrument;
 	}
 
-	public static void setNameofAvtar(String avatara) {
-		nameOfAvtar = avatara;
+	public void setNameofAvtar(String avatara) {
+		this.nameOfAvtar = avatara;
 	}
 
 	public String getNameOfAvtar() {
 		return nameOfAvtar;
 	}
 
-	public static void setNameOfWife(String wife) {
-		nameOfWife = wife;
+	public void setNameOfWife(String wife) {
+		this.nameOfWife = wife;
 	}
 
 	public String getNameOfWife() {
 		return nameOfWife;
 	}
 
-	public static void setLocation(String address) {
-		location = address;
+	public void setLocation(String address) {
+		this.location = address;
 	}
 
 	public String getLocation() {
 		return location;
 	}
 
-	public static void setNameOfUncle(String mama) {
-		nameOfUncle = mama;
+	public void setNameOfUncle(String mama) {
+		this.nameOfUncle = mama;
 	}
 
 	public String getnameOfUncle() {
@@ -214,7 +213,6 @@ public class Vishnu {
 				&& this.noOfHands == vish.noOfHands && this.noOfEyes == vish.noOfEyes
 				&& this.noOfAvtars == vish.noOfAvtars && this.noOfGaurds == vish.noOfGaurds
 				&& this.noOfFriends == vish.noOfFriends;
-
 	}
 
 	public int hashCode() {
