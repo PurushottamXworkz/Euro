@@ -5,7 +5,6 @@ import com.xworkz.kiccha.things.Sudeep;
 public class SudeepRunner {
 	public static void main(String args[]) {
 		Object obj = new Object();
-		Sudeep vishnu = new Sudeep();
 		System.out.println("------------------------------------------------------------");
 		Sudeep sudeep = new Sudeep(46, 5, 11, 6.3f, 8088204455l, true, 52, 78);
 		Sudeep sudee = new Sudeep("Kannada", "Shimogga", "Kiccha Sudeepa", "Nandi Award", "Priya", "My Autograph",
@@ -19,11 +18,11 @@ public class SudeepRunner {
 		Sudeep.setNameOfActor("Badasha");
 		Sudeep.setNameOfAward("Film-fare");
 		Sudeep.setNameofMovie("Vishnuvardhana");
-		Sudeep.setNoOfAwards(20);
+		sudeep.setNoOfAwards(20);
 		Sudeep.setNoOfMovies(100);
 		Sudeep.setPerformingLanguages(5);
 		Sudeep.setpresentlyActive(false);
-		Sudeep.setWeight(70);
+		sudeep.setWeight(70);
 		Sudeep.setWifeName("Padmini");
 		System.out.println("-----------------------------------------------------------");
 		System.out.println(sudeep instanceof Sudeep);
