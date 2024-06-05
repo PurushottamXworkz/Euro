@@ -1,17 +1,15 @@
 package com.xworkz.kiccha.things;
 
-import com.xworkz.vishnu.things.Vishnu;
-
 public class Sudeep {
 
 	public static int noOfMovies;
 	public static int performingLanguages;
-	public static int noOfAwards;
+	public int noOfAwards;
 	public static float height;
 	public static long contact;
 	public static boolean presentlyActive;
 	public static int age;
-	public static int weight;
+	public int weight;
 	public static String languageOfMovie;
 	public static String address;
 	public static String nameOfActor;
@@ -27,39 +25,39 @@ public class Sudeep {
 	public Sudeep(int noOfMovies, int performingLanguages, int noOfAwards, float height, long contact,
 			boolean presentlyActive, int age, int weight) {
 		this.noOfMovies = noOfMovies;
-		System.out.println("The number of hands :" + this.noOfMovies);
+		System.out.println("The number Of Movies :" + this.noOfMovies);
 		this.performingLanguages = performingLanguages;
-		System.out.println("The number of Eyes :" + this.performingLanguages);
+		System.out.println("The performing Languages :" + this.performingLanguages);
 		this.noOfAwards = noOfAwards;
-		System.out.println("The number of Avtaras :" + this.noOfAwards);
+		System.out.println("The number Awards :" + this.noOfAwards);
 		this.height = height;
-		System.out.println("The Avatara yuga :" + this.height);
+		System.out.println("The height :" + this.height);
 		this.contact = contact;
-		System.out.println("Number of gaurds of Vishu :" + this.contact);
+		System.out.println("Contact :" + this.contact);
 		this.presentlyActive = presentlyActive;
-		System.out.println("The name of Devotee :" + this.presentlyActive);
+		System.out.println("PresentlyActive :" + this.presentlyActive);
 		this.age = age;
-		System.out.println("The name of father is :" + this.age);
+		System.out.println("The age of actor is :" + this.age);
 		this.weight = weight;
-		System.out.println("The name of father is :" + this.weight);
+		System.out.println("The weight of actor is :" + this.weight);
 	}
 
 	public Sudeep(String languageOfMovie, String address, String nameOfActor, String nameOfAward, String wifeName,
 			String comeBackMovie, String nameofMovie) {
 		this.languageOfMovie = languageOfMovie;
-		System.out.println("The number of hands :" + this.languageOfMovie);
+		System.out.println("language Of Movie :" + this.languageOfMovie);
 		this.address = address;
-		System.out.println("The number of Eyes :" + this.address);
+		System.out.println("Address :" + this.address);
 		this.nameOfActor = nameOfActor;
-		System.out.println("The number of Avtaras :" + this.nameOfActor);
+		System.out.println("Name Of Actor :" + this.nameOfActor);
 		this.nameOfAward = nameOfAward;
-		System.out.println("The Avatara yuga :" + this.nameOfAward);
+		System.out.println("Name Of Award :" + this.nameOfAward);
 		this.wifeName = wifeName;
-		System.out.println("Number of gaurds of Vishu :" + this.wifeName);
+		System.out.println("Wife Name :" + this.wifeName);
 		this.comeBackMovie = comeBackMovie;
-		System.out.println("The name of Devotee :" + this.comeBackMovie);
+		System.out.println("Come Back Movie :" + this.comeBackMovie);
 		this.nameofMovie = nameofMovie;
-		System.out.println("The name of father is :" + this.nameofMovie);
+		System.out.println("The name of Movie :" + this.nameofMovie);
 	}
 
 	public static void setNoOfMovies(int numberOfMovies) {
@@ -80,8 +78,8 @@ public class Sudeep {
 		return performingLanguages;
 	}
 
-	public static void setNoOfAwards(int awards) {
-		noOfAwards = awards;
+	public  void setNoOfAwards(int awards) {
+		this.noOfAwards = awards;
 	}
 
 	public int getNoOfAwards() {
@@ -120,8 +118,8 @@ public class Sudeep {
 		return age;
 	}
 
-	public static void setWeight(int weigh) {
-		weight = weigh;
+	public void setWeight(int weigh) {
+		this.weight = weigh;
 	}
 
 	public float getWeight() {
