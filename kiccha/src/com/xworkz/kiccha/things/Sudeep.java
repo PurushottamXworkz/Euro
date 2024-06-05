@@ -2,21 +2,21 @@ package com.xworkz.kiccha.things;
 
 public class Sudeep {
 
-	public static int noOfMovies;
-	public static int performingLanguages;
+	public int noOfMovies;
+	public int performingLanguages;
 	public int noOfAwards;
-	public static float height;
-	public static long contact;
-	public static boolean presentlyActive;
-	public static int age;
+	public float height;
+	public long contact;
+	public boolean presentlyActive;
+	public int age;
 	public int weight;
-	public static String languageOfMovie;
-	public static String address;
-	public static String nameOfActor;
-	public static String nameOfAward;
-	public static String wifeName;
-	public static String comeBackMovie;
-	public static String nameofMovie;
+	public String languageOfMovie;
+	public String address;
+	public String nameOfActor;
+	public String nameOfAward;
+	public String wifeName;
+	public String comeBackMovie;
+	public String nameofMovie;
 
 	public Sudeep() {
 		System.out.println("This is no arguement constructor");
@@ -60,25 +60,24 @@ public class Sudeep {
 		System.out.println("The name of Movie :" + this.nameofMovie);
 	}
 
-	public static void setNoOfMovies(int numberOfMovies) {
-		noOfMovies = numberOfMovies;
+	public void setNoOfMovies(int numberOfMovies) {
+		this.noOfMovies = numberOfMovies;
 
 	}
 
 	public int getNoOfMovies() {
-//		System.out.println("Number of hands from get method :" + noOfMovies);
 		return noOfMovies;
 	}
 
-	public static void setPerformingLanguages(int performaningLang) {
-		performingLanguages = performaningLang;
+	public void setPerformingLanguages(int performaningLang) {
+		this.performingLanguages = performaningLang;
 	}
 
 	public int getPerformingLanguages() {
 		return performingLanguages;
 	}
 
-	public  void setNoOfAwards(int awards) {
+	public void setNoOfAwards(int awards) {
 		this.noOfAwards = awards;
 	}
 
@@ -86,32 +85,32 @@ public class Sudeep {
 		return noOfAwards;
 	}
 
-	public static void setHeight(float heigh) {
-		height = heigh;
+	public void setHeight(float heigh) {
+		this.height = heigh;
 	}
 
 	public float getHeight() {
 		return height;
 	}
 
-	public static void setContact(long phoneNo) {
-		contact = phoneNo;
+	public void setContact(long phoneNo) {
+		this.contact = phoneNo;
 	}
 
 	public long getContact() {
 		return contact;
 	}
 
-	public static void setpresentlyActive(boolean active) {
-		presentlyActive = active;
+	public void setpresentlyActive(boolean active) {
+		this.presentlyActive = active;
 	}
 
 	public boolean getpresentlyActive() {
 		return presentlyActive;
 	}
 
-	public static void setAge(int ages) {
-		age = ages;
+	public void setAge(int ages) {
+		this.age = ages;
 	}
 
 	public int getAge() {
@@ -126,56 +125,56 @@ public class Sudeep {
 		return weight;
 	}
 
-	public static void setlanguageOfMovie(String movieLanguage) {
-		languageOfMovie = movieLanguage;
+	public void setlanguageOfMovie(String movieLanguage) {
+		this.languageOfMovie = movieLanguage;
 	}
 
 	public String getlanguageOfMovie() {
 		return languageOfMovie;
 	}
 
-	public static void setAddress(String addres) {
-		address = addres;
+	public void setAddress(String addres) {
+		this.address = addres;
 	}
 
 	public String getAddress() {
 		return address;
 	}
 
-	public static void setNameOfActor(String actor) {
-		nameOfActor = actor;
+	public void setNameOfActor(String actor) {
+		this.nameOfActor = actor;
 	}
 
 	public String getNameOfActor() {
 		return nameOfActor;
 	}
 
-	public static void setNameOfAward(String awardName) {
-		nameOfAward = awardName;
+	public void setNameOfAward(String awardName) {
+		this.nameOfAward = awardName;
 	}
 
 	public String getNameOfAward() {
 		return nameOfAward;
 	}
 
-	public static void setWifeName(String wife) {
-		wifeName = wife;
+	public void setWifeName(String wife) {
+		this.wifeName = wife;
 	}
 
 	public String getWifeName() {
 		return wifeName;
 	}
 
-	public static void setComeBackMovie(String comebackMovie) {
-		comeBackMovie = comebackMovie;
+	public void setComeBackMovie(String comebackMovie) {
+		this.comeBackMovie = comebackMovie;
 	}
 
 	public String getComeBackMovie() {
 		return comeBackMovie;
 	}
 
-	public static void setNameofMovie(String movieName) {
-		nameofMovie = movieName;
+	public void setNameofMovie(String movieName) {
+		this.nameofMovie = movieName;
 	}
 
 	public String getNameofMovie() {
@@ -210,7 +209,7 @@ public class Sudeep {
 		return this.languageOfMovie.equals(vish.languageOfMovie) && this.address.equals(vish.address)
 				&& this.nameOfActor.equals(vish.nameOfActor) && this.nameOfAward.equals(vish.nameOfAward)
 				&& this.wifeName.equals(vish.wifeName) && this.comeBackMovie.equals(vish.comeBackMovie)
-				&& this.nameofMovie.equals(vish.nameofMovie)&& this.noOfMovies == vish.noOfMovies
+				&& this.nameofMovie.equals(vish.nameofMovie) && this.noOfMovies == vish.noOfMovies
 				&& this.performingLanguages == vish.performingLanguages && this.noOfAwards == vish.noOfAwards
 				&& this.height == vish.height && this.contact == vish.contact
 				&& this.presentlyActive == vish.presentlyActive && this.age == vish.age && this.weight == vish.weight;
@@ -227,7 +226,7 @@ public class Sudeep {
 		result = result * prime + wifeName.hashCode();
 		result = result * prime + comeBackMovie.hashCode();
 		result = result * prime + nameofMovie.hashCode();
-		
+
 		result = result * prime + noOfMovies;
 		result = result * prime + performingLanguages;
 		result = result * prime + noOfAwards;
@@ -238,5 +237,4 @@ public class Sudeep {
 //		result = result * prime + weight;
 		return result;
 	}
-
 }
