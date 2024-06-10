@@ -36,7 +36,7 @@ public class VishnuRunner {
 		System.out.println((vishnu2).equals(vishnu2));
 		System.out.println("-----------------------------------------------------------");
 		System.out.println(vishnu1.hashCode());
-//		System.out.println(vishnu2.hashCode());
+		System.out.println(vishnu2.hashCode());
 		System.out.println("------------------------------------------------------------");
 		System.out.println(vishnu1.equals(vishnu2));
 		System.out.println(obj.equals(vishnu));
