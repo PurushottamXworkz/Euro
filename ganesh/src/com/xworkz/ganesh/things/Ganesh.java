@@ -193,51 +193,97 @@ public class Ganesh {
 				+ nameOfUncle + "]";
 	}
 
+	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) {
+		if (this == obj)
 			return true;
-		}
-		if (obj == null) {
+		if (obj == null)
 			return false;
-		}
-		if (this.getClass() != obj.getClass()) {
+		if (getClass() != obj.getClass())
 			return false;
-		}
-		if (!(this instanceof Object)) {
+		Ganesh other = (Ganesh) obj;
+		if (favFood == null) {
+			if (other.favFood != null)
+				return false;
+		} else if (!favFood.equals(other.favFood))
 			return false;
-		}
-
-		Ganesh hanuman = (Ganesh) obj;
-
-		return this.yuga.equals(hanuman.yuga) && this.nameOfDevotee.equals(hanuman.nameOfDevotee)
-				&& this.nameOfFather.equals(hanuman.nameOfFather) && this.nameOfMother.equals(hanuman.nameOfMother)
-				&& this.favFood.equals(hanuman.favFood) && this.instrument.equals(hanuman.instrument)
-				&& this.nameOfAvtar.equals(hanuman.nameOfAvtar) && this.nameOfWife.equals(hanuman.nameOfWife)
-				&& this.location.equals(hanuman.location) && this.nameOfUncle.equals(hanuman.nameOfUncle)
-				&& this.noOfHands == hanuman.noOfHands && this.noOfEyes == hanuman.noOfEyes
-				&& this.noOfAvtars == hanuman.noOfAvtars && this.noOfGaurds == hanuman.noOfGaurds
-				&& this.noOfFriends == hanuman.noOfFriends;
-
+		if (instrument == null) {
+			if (other.instrument != null)
+				return false;
+		} else if (!instrument.equals(other.instrument))
+			return false;
+		if (location == null) {
+			if (other.location != null)
+				return false;
+		} else if (!location.equals(other.location))
+			return false;
+		if (nameOfAvtar == null) {
+			if (other.nameOfAvtar != null)
+				return false;
+		} else if (!nameOfAvtar.equals(other.nameOfAvtar))
+			return false;
+		if (nameOfDevotee == null) {
+			if (other.nameOfDevotee != null)
+				return false;
+		} else if (!nameOfDevotee.equals(other.nameOfDevotee))
+			return false;
+		if (nameOfFather == null) {
+			if (other.nameOfFather != null)
+				return false;
+		} else if (!nameOfFather.equals(other.nameOfFather))
+			return false;
+		if (nameOfMother == null) {
+			if (other.nameOfMother != null)
+				return false;
+		} else if (!nameOfMother.equals(other.nameOfMother))
+			return false;
+		if (nameOfUncle == null) {
+			if (other.nameOfUncle != null)
+				return false;
+		} else if (!nameOfUncle.equals(other.nameOfUncle))
+			return false;
+		if (nameOfWife == null) {
+			if (other.nameOfWife != null)
+				return false;
+		} else if (!nameOfWife.equals(other.nameOfWife))
+			return false;
+		if (noOfAvtars != other.noOfAvtars)
+			return false;
+		if (noOfEyes != other.noOfEyes)
+			return false;
+		if (noOfFriends != other.noOfFriends)
+			return false;
+		if (noOfGaurds != other.noOfGaurds)
+			return false;
+		if (noOfHands != other.noOfHands)
+			return false;
+		if (yuga == null) {
+			if (other.yuga != null)
+				return false;
+		} else if (!yuga.equals(other.yuga))
+			return false;
+		return true;
 	}
 
+	@Override
 	public int hashCode() {
-		final int prime = 5;
+		final int prime = 31;
 		int result = 1;
-		result = result * prime + yuga.hashCode();
-		result = result * prime + nameOfDevotee.hashCode();
-		result = result * prime + nameOfFather.hashCode();
-		result = result * prime + nameOfMother.hashCode();
-		result = result * prime + favFood.hashCode();
-		result = result * prime + instrument.hashCode();
-		result = result * prime + nameOfAvtar.hashCode();
-		result = result * prime + nameOfWife.hashCode();
-		result = result * prime + location.hashCode();
-		result = result * prime + nameOfUncle.hashCode();
-		result = result * prime + noOfHands;
-		result = result * prime + noOfEyes;
-		result = result * prime + noOfAvtars;
-		result = result * prime + noOfGaurds;
-		result = result * prime + noOfFriends;
+		result = prime * result + ((favFood == null) ? 0 : favFood.hashCode());
+		result = prime * result + ((instrument == null) ? 0 : instrument.hashCode());
+		result = prime * result + ((location == null) ? 0 : location.hashCode());
+		result = prime * result + ((nameOfAvtar == null) ? 0 : nameOfAvtar.hashCode());
+		result = prime * result + ((nameOfDevotee == null) ? 0 : nameOfDevotee.hashCode());
+		result = prime * result + ((nameOfFather == null) ? 0 : nameOfFather.hashCode());
+		result = prime * result + ((nameOfMother == null) ? 0 : nameOfMother.hashCode());
+		result = prime * result + ((nameOfUncle == null) ? 0 : nameOfUncle.hashCode());
+		result = prime * result + ((nameOfWife == null) ? 0 : nameOfWife.hashCode());
+		result = prime * result + noOfAvtars;
+		result = prime * result + noOfEyes;
+		result = prime * result + noOfFriends;
+		result = prime * result + noOfGaurds;
+		result = prime * result + noOfHands;
+		result = prime * result + ((yuga == null) ? 0 : yuga.hashCode());
 		return result;
 	}
 
