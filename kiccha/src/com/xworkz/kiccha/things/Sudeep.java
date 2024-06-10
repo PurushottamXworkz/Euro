@@ -190,51 +190,90 @@ public class Sudeep {
 				+ "]";
 	}
 
-	public boolean equals(Object obj) {
-		if (this == obj) {
-			return true;
-		}
-		if (obj == null) {
-			return false;
-		}
-		if (this.getClass() != obj.getClass()) {
-			return false;
-		}
-		if (!(this instanceof Object)) {
-			return false;
-		}
-
-		Sudeep vish = (Sudeep) obj;
-
-		return this.languageOfMovie.equals(vish.languageOfMovie) && this.address.equals(vish.address)
-				&& this.nameOfActor.equals(vish.nameOfActor) && this.nameOfAward.equals(vish.nameOfAward)
-				&& this.wifeName.equals(vish.wifeName) && this.comeBackMovie.equals(vish.comeBackMovie)
-				&& this.nameofMovie.equals(vish.nameofMovie) && this.noOfMovies == vish.noOfMovies
-				&& this.performingLanguages == vish.performingLanguages && this.noOfAwards == vish.noOfAwards
-				&& this.height == vish.height && this.contact == vish.contact
-				&& this.presentlyActive == vish.presentlyActive && this.age == vish.age && this.weight == vish.weight;
-
-	}
-
+	@Override
 	public int hashCode() {
-		final int prime = 5;
+		final int prime = 31;
 		int result = 1;
-		result = result * prime + languageOfMovie.hashCode();
-		result = result * prime + address.hashCode();
-		result = result * prime + nameOfActor.hashCode();
-		result = result * prime + nameOfAward.hashCode();
-		result = result * prime + wifeName.hashCode();
-		result = result * prime + comeBackMovie.hashCode();
-		result = result * prime + nameofMovie.hashCode();
-
-		result = result * prime + noOfMovies;
-		result = result * prime + performingLanguages;
-		result = result * prime + noOfAwards;
-//		result = result * prime + height;
-//		result = result * prime + contact;
-//		result = result * prime + presentlyActive;
-		result = result * prime + age;
-//		result = result * prime + weight;
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + age;
+		result = prime * result + ((comeBackMovie == null) ? 0 : comeBackMovie.hashCode());
+		result = prime * result + (int) (contact ^ (contact >>> 32));
+		result = prime * result + Float.floatToIntBits(height);
+		result = prime * result + ((languageOfMovie == null) ? 0 : languageOfMovie.hashCode());
+		result = prime * result + ((nameOfActor == null) ? 0 : nameOfActor.hashCode());
+		result = prime * result + ((nameOfAward == null) ? 0 : nameOfAward.hashCode());
+		result = prime * result + ((nameofMovie == null) ? 0 : nameofMovie.hashCode());
+		result = prime * result + noOfAwards;
+		result = prime * result + noOfMovies;
+		result = prime * result + performingLanguages;
+		result = prime * result + (presentlyActive ? 1231 : 1237);
+		result = prime * result + weight;
+		result = prime * result + ((wifeName == null) ? 0 : wifeName.hashCode());
 		return result;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Sudeep other = (Sudeep) obj;
+		if (address == null) {
+			if (other.address != null)
+				return false;
+		} else if (!address.equals(other.address))
+			return false;
+		if (age != other.age)
+			return false;
+		if (comeBackMovie == null) {
+			if (other.comeBackMovie != null)
+				return false;
+		} else if (!comeBackMovie.equals(other.comeBackMovie))
+			return false;
+		if (contact != other.contact)
+			return false;
+		if (Float.floatToIntBits(height) != Float.floatToIntBits(other.height))
+			return false;
+		if (languageOfMovie == null) {
+			if (other.languageOfMovie != null)
+				return false;
+		} else if (!languageOfMovie.equals(other.languageOfMovie))
+			return false;
+		if (nameOfActor == null) {
+			if (other.nameOfActor != null)
+				return false;
+		} else if (!nameOfActor.equals(other.nameOfActor))
+			return false;
+		if (nameOfAward == null) {
+			if (other.nameOfAward != null)
+				return false;
+		} else if (!nameOfAward.equals(other.nameOfAward))
+			return false;
+		if (nameofMovie == null) {
+			if (other.nameofMovie != null)
+				return false;
+		} else if (!nameofMovie.equals(other.nameofMovie))
+			return false;
+		if (noOfAwards != other.noOfAwards)
+			return false;
+		if (noOfMovies != other.noOfMovies)
+			return false;
+		if (performingLanguages != other.performingLanguages)
+			return false;
+		if (presentlyActive != other.presentlyActive)
+			return false;
+		if (weight != other.weight)
+			return false;
+		if (wifeName == null) {
+			if (other.wifeName != null)
+				return false;
+		} else if (!wifeName.equals(other.wifeName))
+			return false;
+		return true;
+	}
+
+	
 }
