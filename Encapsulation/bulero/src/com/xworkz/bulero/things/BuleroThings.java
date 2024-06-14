@@ -4,16 +4,19 @@ import com.xworkz.bulero.dto.BuleroDto;
 
 public class BuleroThings {
 
-	public void save(String customerAddress, String string, String string2, String string3, long l, int i, long m, int j, int k, boolean b) {
+	public void save(String showRoomName,String customerName,String showRoomAddress,String customerAddress,
+			long customerNumber,int totalBrands,long showRoomContact, int noOfCustomers,int totalStaff,boolean ifDataValid) {
 			
-		BuleroDto dto=new BulroDto();
+		BuleroDto dto=new BuleroDto();
+		
 		
 		dto.setShowRoomName(customerAddress);
-		dto.setCustomerName(customerName);
+		dto.setCustomerName(customerAddress);
 		dto.setShowRoomAddress(customerAddress);
 		dto.setCustomerAddress(customerAddress);
-		dto.setCustomerNumber(customerNumber);
+		dto.setCustomerNumber(showRoomContact);
 		dto.setTotalBrands(totalStaff);
+		
 		dto.setNoOfCustomers(totalStaff);
 		dto.setTotalStaff(totalStaff);
 		dto.setIfDataValid(ifDataValid);
@@ -27,5 +30,6 @@ public class BuleroThings {
 		dto.getNoOfCustomers();
 		dto.getTotalStaff();
 		dto.isIfDataValid();
+		
 	}
 }

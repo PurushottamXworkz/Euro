@@ -29,6 +29,10 @@ public class BuleroDto {
 		this.ifDataValid = ifDataValid;
 	}
 
+	public BuleroDto() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getShowRoomName() {
 		System.out.println("Show room name:"+showRoomName);
 		return showRoomName;

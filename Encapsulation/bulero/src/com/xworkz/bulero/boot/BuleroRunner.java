@@ -5,8 +5,6 @@ import com.xworkz.bulero.things.BuleroThings;
 public class BuleroRunner {
 	public static void main(String args[]) {
 		BuleroThings bulero=new BuleroThings();
-		
-		bulero.save("Bulero", "Shivu", "RR Nagar", "Btm layout", 7865443325l, 10, 725688282l, 10, 20, true);
-		
+		bulero.save("Shantesh Honda", "Manju", "Bengalore", "Rajaji-Nagar", 7895412574l, 5, 9874854121l, 1006, 24, true);
 	}
 }
