@@ -1,0 +1,84 @@
+1. Define Class
+Ans:-Class is a template or blueprint of an object.
+    -Class created by using class keyword.
+	-Class contains two curly braces opening and closing.
+    -Class contains states and behaviour of object.
+    -Class contains variables and methods.
+    -Class having most parent object that is Object.
+    -Class contains object built in 11 methods such as toString(),hashcode(),equals().
+	-Class having access specifier.(public)
+	-Class contains constructor.
+	
+2.	Explain about JDK.
+Ans: JDK is a tool kit which is used to develop java projects.
+	-JDK(Java Development tool Kit),It consists of JRE and JVM.
+	-JRE stands for (Java Run time Environment)
+		-It consists of libraries and packages
+		-It provides environment to build applications with the help of libries and packages.
+	-JVM stands for (Java Virtual Machine)
+		-It is a virtual machine, not present in reality.
+		-It searches for signature called main and starts program execution.
+	
+
+3.	What is bytecode, explain with flow diagram.
+Ans: In java programing language , the source code in written in normal human readable format. But, this code is not understandable by machine.
+	When javac is called it converts human readable code in to machine readable code that is called bytecode.
+	-This bytecode can be execute on any different platform such as windows, mac android and etc.
+	-Therefore the java language is also called and platform independent.
+	-javac is used to compile code.
+	-java object Name used to execute the code.
+	
+4. Explain a program with switch case.
+Ans:  Switch case is conditional statement where condition meets it jumps to execution of that part.
+	Else it directly exits.
+	class Day{
+	public static void main(String args[]){
+	int dayNumber=1;
+	switch(dayNumber){
+		case 1:System.out.println("This is Monday");
+				break;
+		case 2:System.out.println("This is Tuesday");
+				break;
+		case 3:System.out.println("This is Wednesday");
+				break;
+		case 4:System.out.println("This is Thursday");
+				break;		
+		case 5:System.out.println("This is Friday");
+				break;
+		case 6:System.out.println("This is Saturday");
+				break;		
+		case 7:System.out.println("This is Sunday");
+				break;
+		default:System.out.println("Invalid input");
+				break;
+			}
+		}
+	}
+	
+	
+5. Explain the association with the help of interface
+Ans: Supermarket folder 	
+
+6.Inheritence with program for each type inheritance
+Ans: bike-single level inheritance
+	 ajja-multilevel inheritance
+	 government-hierarchical inheritance
+	 vada - multiple inheritance using interface
+	 
+7.Explain polymorphism with example.
+Ans: Polymorphism is nothing but having same name for method and performing different task.
+		there are two types of polymorphism 
+		1.Runtime polymorphism 2.Compiletime Polymorphism.
+		1.Runtime polymorphism it is also called method overriding.
+		2.Compiletime Polymorphism it is also called method overloading.
+		-hero
+		-
+		
+8.explain encapsulation with dto example.
+Ans :Encapsulation is hiding data from user making access specifier to private and reassigning the value.
+		-benz folder.
+			
+			
+	
+	
+	
