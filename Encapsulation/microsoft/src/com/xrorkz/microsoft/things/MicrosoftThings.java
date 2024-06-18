@@ -29,8 +29,6 @@ public class MicrosoftThings {
 		dto.getNoOfCustomers();
 		dto.getTotalStaff();
 		dto.isIfDataValid();
-		
-		
 	}
 
 }
