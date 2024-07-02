@@ -12,5 +12,4 @@ public class stringindex {
             System.out.println(e.getMessage()); 
         } 
     } 
-
 }
