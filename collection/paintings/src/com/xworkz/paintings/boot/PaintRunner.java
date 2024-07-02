@@ -28,8 +28,5 @@ public class PaintRunner {
 			System.out.println(paintdto4.getPainterName());
 		}
 		System.out.println(collection.size());
-		
-		
-		
 	}
 }
