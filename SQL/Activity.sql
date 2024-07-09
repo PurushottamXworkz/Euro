@@ -41,4 +41,5 @@ select * from Employee_info;
 
 Alter table Employee_info rename column contact to Contact;
 
-select * from Employee_info order by Employee_id desc;
+select * from Employee_info order by Employee_id desc;  
+
