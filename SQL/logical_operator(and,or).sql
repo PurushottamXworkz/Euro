@@ -32,4 +32,9 @@ select * from list_of_vegis where name_of_veg='Brinjal' and price=854.88;
 
 select * from list_of_vegis where name_of_veg='Greeen-Chilly' or price=5124;
 
+select * from list_of_vegis where name_of_veg='Greeen-Chilly' or id=2;
+
+select * from list_of_vegis;
+
+select * from list_of_vegis where price between 1 and 9999;
 
