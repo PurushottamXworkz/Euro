@@ -38,3 +38,8 @@ select * from list_of_vegis;
 
 select * from list_of_vegis where price between 1 and 9999;
 
+-- Order by and Update(DML command)
+
+
+
+
