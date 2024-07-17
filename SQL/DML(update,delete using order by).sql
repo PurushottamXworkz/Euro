@@ -29,3 +29,7 @@ update class_1 set last_percent=89 where f_name='Parveez';
 update class_1 set last_percent=91 where f_name='Rashmi';
 
 
+select * from class_1 order by no_sub; 
+select f_name,last_percent from class_1 order by last_percent desc;
+select f_name,l_name,id from class_1 order by id;
+
